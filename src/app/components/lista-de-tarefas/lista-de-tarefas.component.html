@@ -1,0 +1,6 @@
+<p>{{listaTarefa | json}}</p>
+<ul>
+    <li *ngFor="let item of listaTarefa">
+        <input type="checkbox" name="check" [(ngModel)]="item.concluido"/>
+        {{item.descricao}}</li>
+</ul>
